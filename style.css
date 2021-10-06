@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: rgb(219, 219, 219) !important;
+  
+}
+.country-cards {
+  padding: 30px;
+  gap: 15px;
+}
+.country-card {
+  background-color: rgb(66, 66, 66);
+  width: fit-content;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.country-card > img {
+  width: 320px;
+  height: 213px;
+  max-width: 100%;
+}
+.country-details {
+  text-align: left;
+  padding: 20px;
+}
+.country-details h4 {
+  margin: 10px 5px;
+  font-family: "Poppins", sans-serif;
+}
