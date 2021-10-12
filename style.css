@@ -1,31 +1,104 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: rgb(219, 219, 219) !important;
-  
+  font-family: "Poppins", sans-serif;
 }
-.country-cards {
+section {
+  background-color: rgba(182, 182, 182, 0.356);
+  /* height: 100vh; */
+}
+.map-navbar > p {
+  margin: 0;
+}
+.map-navbar p:nth-child(1) {
+  font-weight: 700;
+}
+.map-navbar {
   padding: 30px;
-  gap: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.country-search-container {
+  margin: 30px 40px;
+  /* position: absolute; */
+}
+.search-ctrl {
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.filter-ctrl {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  width: 20%;
+  border: none;
+  margin-left: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.filter-ctrl option {
+  color: grey;
+  border: none;
+}
+
+.countryCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .country-card {
-  background-color: rgb(66, 66, 66);
+  background-color: white;
   width: fit-content;
   border-radius: 5px;
   overflow: hidden;
-  margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin: 10px;
 }
 .country-card > img {
-  width: 320px;
-  height: 213px;
+  width: 300px;
+  height: 200px;
   max-width: 100%;
 }
 .country-details {
+  background-color: rgb(34, 34, 34);
   text-align: left;
   padding: 20px;
 }
-.country-details h4 {
-  margin: 10px 5px;
+.country-details > h4 {
   font-family: "Poppins", sans-serif;
+  margin: 15px 0;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  font-size: initial;
+  text-transform: uppercase;
+}
+
+.country-details > .country-population,
+.country-details > .country-region,
+.country-details > .country-capital {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.808);
+}
+.country-details > .country-population::before {
+  content: "Population : ";
+  font-weight: bolder;
+}
+.country-details > .country-region::before {
+  content: "Region : ";
+  font-weight: bolder;
+}
+.country-details > .country-capital::before {
+  content: "Capital : ";
+  font-weight: bolder;
 }
